@@ -34,6 +34,32 @@ public class Continente {
     public Pais getListaPaises() {
         return listaPaises;
     }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setSuperficie(double superficie) {
+        this.superficie = superficie;
+    }
+
+    public void setClima(String clima) {
+        this.clima = clima;
+    }
+
+    public void setNumeroPaises(int numeroPaises) {
+        this.numeroPaises = numeroPaises;
+    }
+
+    public void setListaPaises(Pais listaPaises) {
+        this.listaPaises = listaPaises;
+    }
+
+    @Override
+    public String toString() {
+        return "Continente{" + "nombre=" + nombre + ", superficie=" + superficie + 
+                ", clima=" + clima + ", numeroPaises=" + numeroPaises + ", listaPaises=" + listaPaises + '}';
+    }
     
     
     
