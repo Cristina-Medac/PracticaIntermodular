@@ -11,6 +11,7 @@ public class Practica_Intermodular {
             - Investigar menu (guiandose con lo de abajo) que se base en llamar a metodos de las clases
             - Basicamente a cada eleccion del usuario se podria llamar a un metodo
             - Investigar como leer base de datos y crear objetos con los datos
+            - Manager puede ser sistema informativo
         */
         Scanner sc = new Scanner(System.in);
         String menu1 = "0";
