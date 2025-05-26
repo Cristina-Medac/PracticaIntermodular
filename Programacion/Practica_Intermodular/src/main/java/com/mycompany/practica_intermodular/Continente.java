@@ -3,17 +3,19 @@ package com.mycompany.practica_intermodular;
 public class Continente {
     
     private String nombre;
-    private double superficie;
+    private int superficie;
     private String clima;
     private int numeroPaises;
     private Pais listaPaises;
 
-    public Continente(String nombre, double superficie, String clima, int numeroPaises) {
+    public Continente(String nombre, int superficie, String clima, int numeroPaises) {
         this.nombre = nombre;
         this.superficie = superficie;
         this.clima = clima;
         this.numeroPaises = numeroPaises;
     }
+    
+    
 
     public String getNombre() {
         return nombre;
@@ -39,9 +41,9 @@ public class Continente {
         this.nombre = nombre;
     }
 
-    public void setSuperficie(double superficie) {
+    /*public void setSuperficie(double superficie) {
         this.superficie = superficie;
-    }
+    }*/
 
     public void setClima(String clima) {
         this.clima = clima;

@@ -1,10 +1,35 @@
 package com.mycompany.practica_intermodular;
 
+import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Practica_Intermodular {
 
     public static void main(String[] args) {
+        
+        try {
+        DataBaseManager dbm = new DataBaseManager();
+        
+
+        ArrayList<Continente> listaContinentes = dbm.continentes();
+        ArrayList<Pais> listaPaises = dbm.paises();
+        ArrayList<Curiosidad> listaCuriosidades = dbm.curiosidades();
+            for (int i = 0; i < listaContinentes.size(); i++) {
+                System.out.println(listaContinentes.get(i).getNombre());
+            }
+            
+            for (int i = 0; i < listaPaises.size(); i++) {
+                System.out.println(listaPaises.get(i).getNombre());
+            }
+            
+            for (int i = 0; i < listaCuriosidades.size(); i++) {
+                System.out.println(listaCuriosidades.get(i).getHistoria());
+            }
+            
+        } catch (SQLException e) {
+            System.out.println("Error con la base de datos");
+        }
         
         /*
             - Preguntar a Dani sobre la clase "Sistema informativo" del enunciado del proyecto
@@ -13,6 +38,8 @@ public class Practica_Intermodular {
             - Investigar como leer base de datos y crear objetos con los datos
             - Manager puede ser sistema informativo
         */
+        
+        /*
         Scanner sc = new Scanner(System.in);
         String menu1 = "0";
         String menu2 = "0";
