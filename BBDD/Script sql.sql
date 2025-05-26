@@ -55,24 +55,24 @@ VALUES
 INSERT INTO Paises
 (id_continente, nombre, poblacion, idioma_oficial)
 VALUES 
-	(1, 'Nigeria', 227, 'inglés'),
+	(1, 'Nigeria', 227, 'ingles'),
     (1, 'Argelia', 45, 'bereber'),
     (1, 'Egipto', 111, 'arabe'),
     
-    (2, 'España', 47, 'español'),
+    (2, 'Espania', 47, 'espaniol'),
     (2, 'Italia', 60, 'italiano'),
-    (2, 'Francia', 68, 'francés'),
+    (2, 'Francia', 68, 'frances'),
     
     (3, 'China', 1426, 'chino'),
-    (3, 'Japón', 125, 'japonés'),
+    (3, 'Japon', 125, 'japones'),
     (3, 'Corea del Sur', 52, 'coreano'),
     
-    (4, 'Argentina', 46, 'español'),
-    (4, 'Canada', 38, 'inglés, francés'),
+    (4, 'Argentina', 46, 'espaniol'),
+    (4, 'Canada', 38, 'ingles, frances'),
     (4, 'Brasil', 213, 'portugues'),
     
-    (5, 'Australia', 26, 'inglés'),
-    (5, 'Nueva Zelanda', 5, 'inglés, maori'),
+    (5, 'Australia', 26, 'ingles'),
+    (5, 'Nueva Zelanda', 5, 'ingles, maori'),
     (5, 'Papua Nueva Guinea', 10, 'ingles, tok pisin, hiri motu');
     
 
@@ -82,18 +82,18 @@ VALUES
 	(1,'Jollof rice','Mas de 500 lenguas y grupos etnicos', '1 de octubre - Dia de la independencia'),
     (2,'Cuscus','Gran parte del pais es el desierto de Sahara', '5 julio - Dia de la independencia'),
     (3,'Koshari','Hogar de las piramides de Giza', 'ramadan'),
-    (4,'Gazpacho','Es el mayor productor de aceite de oliva del mundo, produciendo más de la mitad de la produccion global', 'Semana Santa'),
+    (4,'Gazpacho','Es el mayor productor de aceite de oliva del mundo, produciendo mas de la mitad de la produccion global', 'Semana Santa'),
     (5,'Pizza','Cuna del imperio romano y del renacimiento', '2 junio - Festa della Repubblica Italiana'),
-    (6,'Croissant','La torre Eiffel es uno de los monumentos más visitados del mundo, y crece en verano', '14 de julio - Dia de la Bastilla'),
-    (7,'Pato laqueado','China es el mayor productor mundial del te, teniendo una ceremonia del té muy refinada.', 'Año nuevo chino'),
-    (8,'Sushi','Mezcla única de tradicion milenaria y tecnologia avanzada', '1 enero - Año nuevo japones'),
-    (9,'Kimchi','Uno de los paises más digitalizados y con mayor velocidad de internet del mundo', 'Chuseok Fiesta de la cosecha'),
+    (6,'Croissant','La torre Eiffel es uno de los monumentos mas visitados del mundo, y crece en verano', '14 de julio - Dia de la Bastilla'),
+    (7,'Pato laqueado','China es el mayor productor mundial del te, teniendo una ceremonia del te muy refinada.', 'Anio nuevo chino'),
+    (8,'Sushi','Mezcla única de tradicion milenaria y tecnologia avanzada', '1 enero - Anio nuevo japones'),
+    (9,'Kimchi','Uno de los paises mas digitalizados y con mayor velocidad de internet del mundo', 'Chuseok Fiesta de la cosecha'),
     (10,'Asado','Hogar del tango', '9 julio - Dia de la independencia'),
     (11,'Poutine','Existe una Ley de disculpas, que refleja una cultura de pedir perdon', '1 julio - Dia de Canada'),
     (12,'Feijoada','Contiene el Amazonas, la mayor selva del mundo', 'Carnaval'),
     (13,'Vegemite','Tiene especies unicas como canguros y koalas', '26 enero - Dia de Australia'),
-    (14,'Hangi','Lugar de grabacion de El señor de los anillos', '6 febrero - Waitangi Day'),
-    (15,'Mumu','Entre el 5% y 7% de las especies conocidas en el mundo viven en este pequeño pais', 'Hiri Moale Festival');
+    (14,'Hangi','Lugar de grabacion de El senior de los anillos', '6 febrero - Waitangi Day'),
+    (15,'Mumu','Entre el 5% y 7% de las especies conocidas en el mundo viven en este pequenio pais', 'Hiri Moale Festival');
     
     
     select * from Continentes;
