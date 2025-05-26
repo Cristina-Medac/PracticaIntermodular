@@ -6,18 +6,21 @@ public class Pais {
     private int poblacion;
     private String idioma;
     private Curiosidad listaCuriosidades;
+    private int idCont;
 
-    public Pais(String nombre, int poblacion, String idioma /*Curiosidad listaCuriosidades*/) {
+    public Pais(String nombre, int poblacion, String idioma, int idCont /*Curiosidad listaCuriosidades*/) {
         this.nombre = nombre;
         this.poblacion = poblacion;
         this.idioma = idioma;
+        this.idCont=idCont;
         /*this.listaCuriosidades = listaCuriosidades;*/
     }
     
-    public Pais(String nombre, int poblacion, String idioma, Curiosidad listaCuriosidades) {
+    public Pais(String nombre, int poblacion, String idioma, int idCont, Curiosidad listaCuriosidades) {
         this.nombre = nombre;
         this.poblacion = poblacion;
         this.idioma = idioma;
+        this.idCont=idCont;
         this.listaCuriosidades = listaCuriosidades;
         
     }
@@ -32,6 +35,10 @@ public class Pais {
 
     public String getIdioma() {
         return idioma;
+    }
+    
+    public int getIdCont() {
+        return idCont;
     }
 
     public Curiosidad getListaCuriosidades() {

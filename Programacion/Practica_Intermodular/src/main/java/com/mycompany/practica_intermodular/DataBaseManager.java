@@ -66,10 +66,11 @@ public class DataBaseManager {
         }
         ResultSet rs = stmt.executeQuery();
         while (rs.next()) {
+                int id_cont = rs.getInt("id_continente");
                 String nombre = rs.getString("nombre"); 
                 int poblacion = rs.getInt("poblacion");
                 String idioma_oficial = rs.getString("idioma_oficial");
-                Pais p = new Pais(nombre, poblacion, idioma_oficial);
+                Pais p = new Pais(nombre, poblacion, idioma_oficial, id_cont);
                 listaPaises0.add(p);
                 }
         ArrayList<Pais> listaPaises = new ArrayList<>();
@@ -77,7 +78,8 @@ public class DataBaseManager {
             String nombre = listaPaises0.get(i).getNombre();
             int poblacion = listaPaises0.get(i).getPoblacion();
             String idioma_oficial = listaPaises0.get(i).getIdioma();
-            Pais p = new Pais(nombre, poblacion, idioma_oficial, listaCuriosidades.get(i));
+            int idCont = listaPaises0.get(i).getIdCont();
+            Pais p = new Pais(nombre, poblacion, idioma_oficial, idCont, listaCuriosidades.get(i));
             listaPaises.add(p);
             
             

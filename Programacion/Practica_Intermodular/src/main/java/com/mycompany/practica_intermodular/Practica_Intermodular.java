@@ -7,11 +7,64 @@ import java.util.Scanner;
 public class Practica_Intermodular {
 
     public static void main(String[] args) {
-        
-        try {
-        DataBaseManager dbm = new DataBaseManager();
-        
 
+        ArrayList<Pais> listaPaisesElegidos = new ArrayList<>();
+        Scanner sc = new Scanner(System.in);
+        int indice = 1;
+        int eleccion = 0;
+
+        /*for (int i = 0; i < listaPaises.size(); i++) {
+                
+                 System.out.println(listaPaises.get(i).getNombre() + " " + listaPaises.get(i).getIdCont());
+            }*/
+        while (eleccion != 6) {
+            try {
+                DataBaseManager dbm = new DataBaseManager();
+                ArrayList<Continente> listaContinentes = dbm.continentes();
+                ArrayList<Pais> listaPaises = dbm.paises();
+                /*dbm.menu1();*/
+                System.out.println("Elige un continente:");
+                System.out.println("1. Africa");
+                System.out.println("2. Europa");
+                System.out.println("3. Asia");
+                System.out.println("4. America");
+                System.out.println("5. Oceania");
+                System.out.println("6. Apagar el programa");
+                System.out.print("Tu eleccion: ");
+                eleccion = Integer.parseInt(sc.nextLine());
+                if (eleccion == 6) {
+                    System.out.println("Cerrando programa");
+                    dbm.cerrarSesion();
+                } else {
+                    /*dbm.menu2(eleccion);*/
+                    System.out.println("Que pais quieres ver:");
+                    for (int i = 0; i < listaPaises.size(); i++) {
+                        if (listaPaises.get(i).getIdCont() == eleccion) {
+                            listaPaisesElegidos.add(listaPaises.get(i));
+                            System.out.println(indice + ". " + listaPaises.get(i).getNombre());
+                            indice++;
+                        }
+
+                    }
+                    System.out.print("Tu eleccion: ");
+                    int eleccion2 = Integer.parseInt(sc.nextLine());
+                    /* dbm.menu3(eleccion2) */
+                    System.out.println(listaPaisesElegidos.get(eleccion2 - 1).getNombre() + ": ");
+                    System.out.println("Gastronomia: " + listaPaisesElegidos.get(eleccion2 - 1).getListaCuriosidades().getGastronomia());
+                    System.out.println("Peculiaridad: " + listaPaisesElegidos.get(eleccion2 - 1).getListaCuriosidades().getHistoria());
+                    System.out.println("Festividad: " + listaPaisesElegidos.get(eleccion2 - 1).getListaCuriosidades().getFiesta());
+                }
+
+            } catch (SQLException e) {
+                System.out.println("Error en la base de datos");
+            } catch (NumberFormatException e) {
+                System.out.println("Eso no es un numero. Volviendo al menu principal");
+            }
+        }
+    }
+}
+
+/*
         ArrayList<Continente> listaContinentes = dbm.continentes();
         ArrayList<Pais> listaPaises = dbm.paises();
             for (int i = 0; i < listaContinentes.size(); i++) {
@@ -28,17 +81,15 @@ public class Practica_Intermodular {
             System.out.println("-----------------------------------");
         } catch (SQLException e) {
             System.out.println("Error con la base de datos");
-        }
-        
-        /*
+        }*/
+ /*
             - Preguntar a Dani sobre la clase "Sistema informativo" del enunciado del proyecto
             - Investigar menu (guiandose con lo de abajo) que se base en llamar a metodos de las clases
             - Basicamente a cada eleccion del usuario se podria llamar a un metodo
             - Investigar como leer base de datos y crear objetos con los datos
             - Manager puede ser sistema informativo
-        */
-        
-        /*
+ */
+ /*
         Scanner sc = new Scanner(System.in);
         String menu1 = "0";
         String menu2 = "0";
@@ -144,6 +195,3 @@ public class Practica_Intermodular {
             default:
                 throw new AssertionError();
         } */
-        
-    }
-}
