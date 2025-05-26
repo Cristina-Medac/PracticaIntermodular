@@ -14,19 +14,18 @@ public class Practica_Intermodular {
 
         ArrayList<Continente> listaContinentes = dbm.continentes();
         ArrayList<Pais> listaPaises = dbm.paises();
-        ArrayList<Curiosidad> listaCuriosidades = dbm.curiosidades();
             for (int i = 0; i < listaContinentes.size(); i++) {
                 System.out.println(listaContinentes.get(i).getNombre());
             }
-            
+            System.out.println("-----------------------------------");
             for (int i = 0; i < listaPaises.size(); i++) {
                 System.out.println(listaPaises.get(i).getNombre());
             }
-            
-            for (int i = 0; i < listaCuriosidades.size(); i++) {
-                System.out.println(listaCuriosidades.get(i).getHistoria());
+            System.out.println("-----------------------------------");
+            for (int i = 0; i < listaPaises.size(); i++) {
+                System.out.println(listaPaises.get(i).getListaCuriosidades().getFiesta());
             }
-            
+            System.out.println("-----------------------------------");
         } catch (SQLException e) {
             System.out.println("Error con la base de datos");
         }

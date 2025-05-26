@@ -50,21 +50,45 @@ public class DataBaseManager {
     
     public ArrayList<Pais> paises()throws SQLException {
         
-        ArrayList<Pais> listaPaises = new ArrayList<>();
+        ArrayList<Curiosidad> listaCuriosidades = new ArrayList<>();
+        ArrayList<Pais> listaPaises0 = new ArrayList<>();
         String sql = "Select * from Paises";
+        String sql2 = "Select * from Curiosidades";
         PreparedStatement stmt = conn.prepareStatement(sql);
+        PreparedStatement stmt2 = conn.prepareStatement(sql2);
+        ResultSet rs2 = stmt2.executeQuery();
+        while (rs2.next()) {
+                String gastronomia = rs2.getString("gastronomia"); 
+                String fiesta = rs2.getString("festividad");
+                String peculiaridad = rs2.getString("peculiaridad");
+                Curiosidad cu = new Curiosidad(gastronomia, fiesta, peculiaridad);
+                listaCuriosidades.add(cu);
+        }
         ResultSet rs = stmt.executeQuery();
         while (rs.next()) {
                 String nombre = rs.getString("nombre"); 
                 int poblacion = rs.getInt("poblacion");
                 String idioma_oficial = rs.getString("idioma_oficial");
                 Pais p = new Pais(nombre, poblacion, idioma_oficial);
-                listaPaises.add(p);
+                listaPaises0.add(p);
                 }
+        ArrayList<Pais> listaPaises = new ArrayList<>();
+        for (int i = 0; i < listaPaises0.size(); i++) {
+            String nombre = listaPaises0.get(i).getNombre();
+            int poblacion = listaPaises0.get(i).getPoblacion();
+            String idioma_oficial = listaPaises0.get(i).getIdioma();
+            Pais p = new Pais(nombre, poblacion, idioma_oficial, listaCuriosidades.get(i));
+            listaPaises.add(p);
+            
+            
+        }
+        
         return listaPaises;
         }
+}
     
-    public ArrayList<Curiosidad> curiosidades()throws SQLException {
+    
+    /*public ArrayList<Curiosidad> curiosidades()throws SQLException {
         
         ArrayList<Curiosidad> listaCuriosidades = new ArrayList<>();
         String sql = "Select * from Curiosidades";
@@ -78,9 +102,9 @@ public class DataBaseManager {
                 listaCuriosidades.add(cu);
                 }
         return listaCuriosidades;
-        }
-    
-}
+        }*/
+     
+
 
 
 

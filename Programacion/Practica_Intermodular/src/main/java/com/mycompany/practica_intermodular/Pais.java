@@ -5,13 +5,21 @@ public class Pais {
     private String nombre;
     private int poblacion;
     private String idioma;
-    /*private Curiosidad listaCuriosidades;*/
+    private Curiosidad listaCuriosidades;
 
     public Pais(String nombre, int poblacion, String idioma /*Curiosidad listaCuriosidades*/) {
         this.nombre = nombre;
         this.poblacion = poblacion;
         this.idioma = idioma;
         /*this.listaCuriosidades = listaCuriosidades;*/
+    }
+    
+    public Pais(String nombre, int poblacion, String idioma, Curiosidad listaCuriosidades) {
+        this.nombre = nombre;
+        this.poblacion = poblacion;
+        this.idioma = idioma;
+        this.listaCuriosidades = listaCuriosidades;
+        
     }
 
     public String getNombre() {
@@ -26,9 +34,9 @@ public class Pais {
         return idioma;
     }
 
-    /*public Curiosidad getListaCuriosidades() {
+    public Curiosidad getListaCuriosidades() {
         return listaCuriosidades;
-    }*/
+    }
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
@@ -42,9 +50,9 @@ public class Pais {
         this.idioma = idioma;
     }
 
-    /*public void setListaCuriosidades(Curiosidad listaCuriosidades) {
+    public void setListaCuriosidades(Curiosidad listaCuriosidades) {
         this.listaCuriosidades = listaCuriosidades;
-    }*/
+    }
 
     @Override
     public String toString() {
