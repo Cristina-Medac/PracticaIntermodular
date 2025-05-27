@@ -37,22 +37,42 @@ public class Practica_Intermodular {
                     dbm.cerrarSesion();
                 } else {
                     /*dbm.menu2(eleccion);*/
-                    System.out.println("Que pais quieres ver:");
+                    System.out.println("Datos de " + listaContinentes.get(eleccion-1).getNombre() + ": ");
+                    System.out.println("Superficie: " + listaContinentes.get(eleccion-1).getSuperficie());
+                    System.out.println("Clima: " + listaContinentes.get(eleccion-1).getClima());
+                    System.out.println("Numero de paises: " + listaContinentes.get(eleccion-1).getNumeroPaises());
+                    System.out.println("Que pais quieres ver dentro de este continente:");
                     for (int i = 0; i < listaPaises.size(); i++) {
                         if (listaPaises.get(i).getIdCont() == eleccion) {
                             listaPaisesElegidos.add(listaPaises.get(i));
                             System.out.println(indice + ". " + listaPaises.get(i).getNombre());
                             indice++;
                         }
-
                     }
+                    indice =1;
+                    System.out.println("4. Volver al menu principal");
+                           
                     System.out.print("Tu eleccion: ");
                     int eleccion2 = Integer.parseInt(sc.nextLine());
                     /* dbm.menu3(eleccion2) */
-                    System.out.println(listaPaisesElegidos.get(eleccion2 - 1).getNombre() + ": ");
+                    if (eleccion2 != 4) {
+                    System.out.println("Datos de " + listaPaisesElegidos.get(eleccion2-1).getNombre() + ": ");
+                    System.out.println("Poblacion: " + listaPaisesElegidos.get(eleccion2-1).getPoblacion());
+                    System.out.println("Idioma: " + listaPaisesElegidos.get(eleccion2-1).getIdioma());
+                    System.out.println("Quieres ver curiosidades de " + listaPaisesElegidos.get(eleccion2-1).getNombre() + "(Si/No)");
+                    String eleccion3 = sc.nextLine();
+                    if (eleccion3.equalsIgnoreCase("Si")) {
+                    System.out.println("--------------");
+                    System.out.println("Curiosidades de " + listaPaisesElegidos.get(eleccion2 - 1).getNombre() + ": ");
                     System.out.println("Gastronomia: " + listaPaisesElegidos.get(eleccion2 - 1).getListaCuriosidades().getGastronomia());
                     System.out.println("Peculiaridad: " + listaPaisesElegidos.get(eleccion2 - 1).getListaCuriosidades().getHistoria());
                     System.out.println("Festividad: " + listaPaisesElegidos.get(eleccion2 - 1).getListaCuriosidades().getFiesta());
+                    } else {
+                        System.out.println("Estupendo. Volviendo al menu principal"); 
+                    }
+                    } else {
+                        System.out.println("Estupendo. Volviendo al menu principal");
+                    }
                 }
 
             } catch (SQLException e) {
