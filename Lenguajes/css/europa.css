@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  background-color: #ffb347;
+  background-color: #ffa94d;
   color: white;
   text-align: center;
   padding: 40px 20px;
@@ -61,4 +61,3 @@ footer {
   margin-top: 60px;
   border-top: 5px solid #ffcc80;
 }
-

@@ -2,12 +2,12 @@ body {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fff8e1;
+  background-color: #fefaf1;
   color: #333;
 }
 
 header {
-  background-color: #ffb347;
+  background-color: #ffae42;
   color: white;
   text-align: center;
   padding: 40px 20px;
@@ -26,7 +26,7 @@ main.contenedor {
 }
 
 section.pais {
-  background-color: #fff3cd;
+  background-color: #fff5e1;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -48,17 +48,16 @@ section.pais {
 
 .curiosidades {
   flex: 1;
-  background-color: #ffeeba;
+  background-color: #fff1dc;
   padding: 15px;
   border-radius: 10px;
 }
 
 footer {
-  background-color: #ffa500;
+  background-color: #ffa94d;
   color: white;
   text-align: center;
   padding: 20px;
   margin-top: 60px;
-  border-top: 5px solid #ffcc80;
+  border-top: 5px solid #ffd6a0;
 }
-
