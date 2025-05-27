@@ -27,8 +27,7 @@ public class DataBaseManager {
     public void cerrarSesion() throws SQLException {
         
         this.conn.close();
-        
-        
+          
     }
     
     public ArrayList<Continente> continentes()throws SQLException {
@@ -72,7 +71,7 @@ public class DataBaseManager {
                 String idioma_oficial = rs.getString("idioma_oficial");
                 Pais p = new Pais(nombre, poblacion, idioma_oficial, id_cont);
                 listaPaises0.add(p);
-                }
+        }
         ArrayList<Pais> listaPaises = new ArrayList<>();
         for (int i = 0; i < listaPaises0.size(); i++) {
             String nombre = listaPaises0.get(i).getNombre();
@@ -81,31 +80,10 @@ public class DataBaseManager {
             int idCont = listaPaises0.get(i).getIdCont();
             Pais p = new Pais(nombre, poblacion, idioma_oficial, idCont, listaCuriosidades.get(i));
             listaPaises.add(p);
-            
-            
-        }
-        
+            }
         return listaPaises;
         }
 }
-    
-    
-    /*public ArrayList<Curiosidad> curiosidades()throws SQLException {
-        
-        ArrayList<Curiosidad> listaCuriosidades = new ArrayList<>();
-        String sql = "Select * from Curiosidades";
-        PreparedStatement stmt = conn.prepareStatement(sql);
-        ResultSet rs = stmt.executeQuery();
-        while (rs.next()) {
-                String gastronomia = rs.getString("gastronomia"); 
-                String fiesta = rs.getString("festividad");
-                String peculiaridad = rs.getString("peculiaridad");
-                Curiosidad cu = new Curiosidad(gastronomia, fiesta, peculiaridad);
-                listaCuriosidades.add(cu);
-                }
-        return listaCuriosidades;
-        }*/
-     
 
 
 

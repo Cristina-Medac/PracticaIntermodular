@@ -41,10 +41,6 @@ public class Continente {
         this.nombre = nombre;
     }
 
-    /*public void setSuperficie(double superficie) {
-        this.superficie = superficie;
-    }*/
-
     public void setClima(String clima) {
         this.clima = clima;
     }

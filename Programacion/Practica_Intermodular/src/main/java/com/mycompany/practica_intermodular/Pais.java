@@ -8,12 +8,11 @@ public class Pais {
     private Curiosidad listaCuriosidades;
     private int idCont;
 
-    public Pais(String nombre, int poblacion, String idioma, int idCont /*Curiosidad listaCuriosidades*/) {
+    public Pais(String nombre, int poblacion, String idioma, int idCont) {
         this.nombre = nombre;
         this.poblacion = poblacion;
         this.idioma = idioma;
         this.idCont=idCont;
-        /*this.listaCuriosidades = listaCuriosidades;*/
     }
     
     public Pais(String nombre, int poblacion, String idioma, int idCont, Curiosidad listaCuriosidades) {
