@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Memoria - Data Explorers</title>
+  <link rel="stylesheet" href="css/memoria.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Data Explorers</h1>
+    <h2>Grupo: MPC System</h2>
+  </header>
+
+  <section class="introduccion">
+    <h3>Introducción</h3>
+    <p>
+      El objetivo de este proyecto es desarrollar una página web interactiva que permita explorar los continentes y conocer información relevante sobre algunos de sus países. A través de una estructura organizada, imágenes representativas y datos obtenidos de una base de datos MySQL, los usuarios pueden aprender sobre gastronomía, festividades y peculiaridades culturales de distintos lugares del mundo.
+    </p>
+    <p>
+      La temática elegida ha sido la geografía y cultura global, con el propósito de fomentar el conocimiento general y la curiosidad por diferentes regiones del planeta.
+    </p>
+  </section>
+
+  <section class="tablas">
+    <h3>Tabla: Continentes</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Superficie (millones km²)</th>
+          <th>Clima</th>
+          <th>Nº Países</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Africa</td><td>30</td><td>Tropical</td><td>54</td></tr>
+        <tr><td>2</td><td>Europa</td><td>10</td><td>Templado</td><td>44</td></tr>
+        <tr><td>3</td><td>Asia</td><td>44</td><td>Variado</td><td>49</td></tr>
+        <tr><td>4</td><td>America</td><td>42</td><td>Templado</td><td>35</td></tr>
+        <tr><td>5</td><td>Oceania</td><td>8</td><td>Templado</td><td>14</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Tabla: Paises</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Continente</th>
+          <th>Nombre</th>
+          <th>Población (millones)</th>
+          <th>Idioma oficial</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>1</td><td>Nigeria</td><td>227</td><td>Inglés</td></tr>
+        <tr><td>2</td><td>1</td><td>Argelia</td><td>45</td><td>Bereber</td></tr>
+        <tr><td>3</td><td>1</td><td>Egipto</td><td>111</td><td>Árabe</td></tr>
+        <tr><td>4</td><td>2</td><td>España</td><td>47</td><td>Español</td></tr>
+        <tr><td>5</td><td>2</td><td>Italia</td><td>60</td><td>Italiano</td></tr>
+        <tr><td>6</td><td>2</td><td>Francia</td><td>68</td><td>Francés</td></tr>
+        <tr><td>7</td><td>3</td><td>China</td><td>1426</td><td>Chino</td></tr>
+        <tr><td>8</td><td>3</td><td>Japón</td><td>125</td><td>Japonés</td></tr>
+        <tr><td>9</td><td>3</td><td>Corea del Sur</td><td>52</td><td>Coreano</td></tr>
+        <tr><td>10</td><td>4</td><td>Argentina</td><td>46</td><td>Español</td></tr>
+        <tr><td>11</td><td>4</td><td>Canadá</td><td>38</td><td>Inglés, Francés</td></tr>
+        <tr><td>12</td><td>4</td><td>Brasil</td><td>213</td><td>Portugués</td></tr>
+        <tr><td>13</td><td>5</td><td>Australia</td><td>26</td><td>Inglés</td></tr>
+        <tr><td>14</td><td>5</td><td>Nueva Zelanda</td><td>5</td><td>Inglés, Maorí</td></tr>
+        <tr><td>15</td><td>5</td><td>Papúa Nueva Guinea</td><td>10</td><td>Inglés, Tok Pisin, Hiri Motu</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Tabla: Curiosidades</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>País</th>
+          <th>Gastronomía</th>
+          <th>Peculiaridad</th>
+          <th>Festividad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>1</td><td>Jollof rice</td><td>Más de 500 lenguas y grupos étnicos</td><td>1 de octubre</td></tr>
+        <tr><td>2</td><td>2</td><td>Cuscús</td><td>Gran parte del país es desierto del Sahara</td><td>5 de julio</td></tr>
+        <tr><td>3</td><td>3</td><td>Koshari</td><td>Hogar de las pirámides de Giza</td><td>Ramadán</td></tr>
+        <tr><td>4</td><td>4</td><td>Gazpacho</td><td>Mayor productor de aceite de oliva</td><td>Semana Santa</td></tr>
+        <tr><td>5</td><td>5</td><td>Pizza</td><td>Cuna del renacimiento</td><td>2 de junio</td></tr>
+        <tr><td>6</td><td>6</td><td>Croissant</td><td>La Torre Eiffel crece en verano</td><td>14 de julio</td></tr>
+        <tr><td>7</td><td>7</td><td>Pato laqueado</td><td>Cuna de la ceremonia del té</td><td>Año nuevo chino</td></tr>
+        <tr><td>8</td><td>8</td><td>Sushi</td><td>Tecnología avanzada con tradición milenaria</td><td>1 de enero</td></tr>
+        <tr><td>9</td><td>9</td><td>Kimchi</td><td>Alta digitalización y velocidad de internet</td><td>Chuseok</td></tr>
+        <tr><td>10</td><td>10</td><td>Asado</td><td>Hogar del tango</td><td>9 de julio</td></tr>
+        <tr><td>11</td><td>11</td><td>Poutine</td><td>Cultura de pedir perdón</td><td>1 de julio</td></tr>
+        <tr><td>12</td><td>12</td><td>Feijoada</td><td>Contiene el Amazonas</td><td>Carnaval</td></tr>
+        <tr><td>13</td><td>13</td><td>Vegemite</td><td>Especies únicas como koalas</td><td>26 de enero</td></tr>
+        <tr><td>14</td><td>14</td><td>Hangi</td><td>Rodajes de El Señor de los Anillos</td><td>6 de febrero</td></tr>
+        <tr><td>15</td><td>15</td><td>Mumu</td><td>7% de especies globales en un solo país</td><td>Hiri Moale Festival</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+</body>
+</html>
