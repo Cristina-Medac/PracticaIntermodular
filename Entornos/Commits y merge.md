@@ -9,7 +9,7 @@ En este archivo se encuentra el historial de commits y merges que se han realiza
 
 ---
 
-## RAMA DE LENGUAJE DE MARCAS
+## RAMA DE LENGUAJE DE MARCAS y SISTEMAS (Pedro)
 
 ```cmd
 commit 9d219f62ba2017c9dc743863d60e75328ad001c0 (HEAD -> rama_LLMM, origin/rama_LLMM)
@@ -146,7 +146,7 @@ Date:   Mon May 19 14:16:27 2025 +0200
 
 ```
 
-## RAMA DE PROGRAMACIÓN
+## RAMA DE PROGRAMACIÓN (Miguel)
 
 ```cmd
 commit 61352371dfeb69ac35fa123cc4162d6b86bd4fc4 (HEAD -> rama_Programación, origin/rama_Programación)
@@ -279,7 +279,7 @@ Date:   Mon May 19 14:16:27 2025 +0200
 
 ```
 
-## RAMA DE BASE DE DATOS
+## RAMA DE BASE DE DATOS (Cristina)
 
 ```cmd
 commit d572587cc85241fdaf38234349181055c04bdf62 (HEAD -> rama_BBDD, origin/rama_BBDD)
@@ -435,7 +435,7 @@ Date:   Mon May 19 14:16:27 2025 +0200
 
 ```
 
-## RAMA DE ENTORNOS
+## RAMA DE ENTORNOS (Cristina)
 
 ```cmd
 commit d287b97b1e8aefac0920f900095d072cab8b3bd9 (HEAD -> rama_Entornos, origin/rama_Entornos)
