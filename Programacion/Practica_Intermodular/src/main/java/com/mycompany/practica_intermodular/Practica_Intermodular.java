@@ -46,9 +46,9 @@ public class Practica_Intermodular {
                     dbm.cerrarSesion();
                 } else {
                     System.out.println("Informacion de " + listaContinentes.get(eleccion - 1).getNombre() + ": ");
-                    System.out.println("Superficie: Este continente tiene unos " + listaContinentes.get(eleccion - 1).getSuperficie() + " aproximadamente");
-                    System.out.println("Clima: Tiene un clima mayormente " + listaContinentes.get(eleccion - 1).getClima());
-                    System.out.println("Numero de paises: " + listaContinentes.get(eleccion - 1).getNumeroPaises());
+                    System.out.println("Este continente tiene unos " + listaContinentes.get(eleccion - 1).getSuperficie() + " millones de km2 aproximadamente");
+                    System.out.println("Tiene un clima mayormente " + listaContinentes.get(eleccion - 1).getClima());
+                    System.out.println("Tiene un total de " + listaContinentes.get(eleccion - 1).getNumeroPaises() + " paises");
                     System.out.println("Que pais quieres consultar dentro de este continente:");
 
                     // Bucle para mostrar los paises dentro del continente elegido
@@ -71,8 +71,8 @@ public class Practica_Intermodular {
                     /*Menu para seleccionar paises*/
                     if (eleccion2 != 4) {
                         System.out.println("Informacion  de " + listaPaisesElegidos.get(eleccion2 - 1).getNombre() + ": ");
-                        System.out.println("Poblacion: Tiene " + listaPaisesElegidos.get(eleccion2 - 1).getPoblacion() + " habitantes");
-                        System.out.println("Idioma: El idioma principal de esta region es el " + listaPaisesElegidos.get(eleccion2 - 1).getIdioma());
+                        System.out.println("Tiene unos " + listaPaisesElegidos.get(eleccion2 - 1).getPoblacion() + " millones de habitantes");
+                        System.out.println("El idioma principal de esta region es el " + listaPaisesElegidos.get(eleccion2 - 1).getIdioma());
 
                         /* Decision para mostrar curiosidades del pais elegido */
                         System.out.println("Quieres ver curiosidades de " + listaPaisesElegidos.get(eleccion2 - 1).getNombre() + "(Si/No)");
@@ -80,9 +80,9 @@ public class Practica_Intermodular {
                         if (eleccion3.equalsIgnoreCase("Si")) {
                             System.out.println("<------------------------->");
                             System.out.println("Curiosidades de " + listaPaisesElegidos.get(eleccion2 - 1).getNombre() + ": ");
-                            System.out.println("Gastronomia: " + listaPaisesElegidos.get(eleccion2 - 1).getListaCuriosidades().getGastronomia());
-                            System.out.println("Peculiaridad: " + listaPaisesElegidos.get(eleccion2 - 1).getListaCuriosidades().getHistoria());
-                            System.out.println("Festividad: " + listaPaisesElegidos.get(eleccion2 - 1).getListaCuriosidades().getFiesta());
+                            System.out.println("Uno de los platos principales es " + listaPaisesElegidos.get(eleccion2 - 1).getListaCuriosidades().getGastronomia());
+                            System.out.println("Algo curioso de este pais: " + listaPaisesElegidos.get(eleccion2 - 1).getListaCuriosidades().getHistoria());
+                            System.out.println("Un dia festivo destacado es: " + listaPaisesElegidos.get(eleccion2 - 1).getListaCuriosidades().getFiesta());
                             System.out.println("<------------------------->");
                             System.out.println("Hemos terminado esta vuelta. Volvemos al menu principal para seguir explorando el mundo");
                         // Decidir no querer ver curiosidades del pais
