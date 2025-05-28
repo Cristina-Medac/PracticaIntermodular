@@ -5,7 +5,7 @@ USE ProyectoFinal;
 CREATE TABLE Continentes (
 	id INT AUTO_INCREMENT PRIMARY KEY,
 	nombre VARCHAR(20) NOT NULL, 
-    superficie INT, -- en millones
+    superficie INT, -- en millones km2
     clima VARCHAR(50),
     num_paises INT NOT NULL,
     contador INT 
@@ -15,7 +15,7 @@ CREATE TABLE Paises (
 	id INT AUTO_INCREMENT PRIMARY KEY,
     id_continente INT NOT NULL, 
     nombre VARCHAR(50) NOT NULL UNIQUE,
-    poblacion INT,
+    poblacion INT, -- en millones de personas
     idioma_oficial VARCHAR(50),
     FOREIGN KEY (id_continente) REFERENCES Continentes (id)
 );
