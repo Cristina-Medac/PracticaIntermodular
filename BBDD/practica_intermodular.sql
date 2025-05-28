@@ -96,10 +96,9 @@ VALUES
     (15,'Mumu','Entre el 5% y 7% de las especies conocidas en el mundo viven en este pequenio pais', 'Hiri Moale Festival');
     
     
-    select * from Continentes;
-    select * from Paises;
-    select * from Curiosidades;
-    
-    
+select * from Continentes;
 
-
+/*INSERT INTO Paises
+(id_continente, nombre, poblacion, idioma_oficial)
+VALUES 
+	(1, 'Etiopia', 55, 'amarico');*/
