@@ -11,7 +11,7 @@ En este archivo se encuentra el historial de commits y merges que se han realiza
 
 ## RAMA DE LENGUAJE DE MARCAS
 
-```
+```cmd
 commit 9d219f62ba2017c9dc743863d60e75328ad001c0 (HEAD -> rama_LLMM, origin/rama_LLMM)
 Merge: 5958e6b 20eb075
 Author: PedroManuel-medac <plb0008@alu.medac.es>
@@ -148,7 +148,7 @@ Date:   Mon May 19 14:16:27 2025 +0200
 
 ## RAMA DE PROGRAMACIÓN
 
-```
+```cmd
 commit 61352371dfeb69ac35fa123cc4162d6b86bd4fc4 (HEAD -> rama_Programación, origin/rama_Programación)
 Author: Miguel <mpc0080@alu.medac.es>
 Date:   Wed May 28 10:09:02 2025 +0200
@@ -281,7 +281,7 @@ Date:   Mon May 19 14:16:27 2025 +0200
 
 ## RAMA DE BASE DE DATOS
 
-```
+```cmd
 commit d572587cc85241fdaf38234349181055c04bdf62 (HEAD -> rama_BBDD, origin/rama_BBDD)
 Merge: df90131 027e6f9
 Author: Cristina <cam0028@alu.medac.es>
@@ -437,7 +437,7 @@ Date:   Mon May 19 14:16:27 2025 +0200
 
 ## RAMA DE ENTORNOS
 
-```
+```cmd
 commit d287b97b1e8aefac0920f900095d072cab8b3bd9 (HEAD -> rama_Entornos, origin/rama_Entornos)
 Author: Cristina <cam0028@alu.medac.es>
 Date:   Wed May 28 10:10:48 2025 +0200
@@ -514,7 +514,7 @@ Date:   Mon May 19 14:16:27 2025 +0200
 
 ## HISTORIAL DEL MAIN
 
-```
+```cmd
 commit 8801586aafdd0be4c4d13ae08cc15491db8f44a0 (HEAD -> main, origin/main, origin/HEAD)
 Merge: 78c5a5b d572587
 Author: Cristina Ahumada Martínez <cam0028@alu.medac.es>
